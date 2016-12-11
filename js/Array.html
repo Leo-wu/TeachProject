@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+    <script type="text/javascript">
+
+        // 问题一：什么是二维数组？
+        var a = ["a1","a2","a3","a4","a5"]; // 一维数组
+
+        var b = ["b1","b2","b3","b4","b5"]; // 一维数组
+
+        var c = ["c1","c2","c3","c4","c5"]; // 一维数组
+
+        var arr = [a,b,c];  // 二维数组
+
+        // 总结：二维数组是一维数组的一维数组。;
+
+
+        // 问题二：JS中& 与&& 的区别.
+        var a = true;
+        var b = false;
+        var c = 10001;
+        var d = 10110;
+        document.write("a&&b="+(a&&b)+"<br />");
+        document.write("c&d="+(c&d));
+
+        // & :按位与运算，对二进制数的运算，结果为二进制数。
+        // &&：逻辑与运算，对boolean类型数据的运算，结果为boolean值。
+        // 为什么加括号：假如不加括号，根据运算符优先级，+号>&,因此结果相当于（"c&d"+c）&d,即先做+运算,在做&运算；
+
+        // 问题三：数组跨下标赋值，那么没赋初值的下标对应的数组元素值是什么？
+            var arr;
+            arr = [1,2,3];
+            arr[5] = 5;
+            document.write("<br />"+arr[4]);
+
+            var book;
+            alert(book);
+            //总结：未赋值的元素，值为undefined；未赋值的变量，值也为undefined；
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
